@@ -1,0 +1,292 @@
+/* -----------------------
+Base styles
+------------------------*/
+
+body
+{
+	margin: 0;
+	padding: 0;
+	color: #333;
+	background-color: #eee;
+	font: 1em/1.2 "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+}
+*{
+	margin: auto;
+	
+}
+h1,h2,h3,h4,h5,h6
+{
+	margin: 0 0 .5em;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+h1 { font-size: 2.25em; } /* 36px */
+h2 { font-size: 1.75em; } /* 28px */
+h3 { font-size: 1.375em; } /* 22px */
+h4 { font-size: 1.125em; } /* 18px */
+h5 { font-size: 1em; } /* 16px */
+h6 { font-size: .875em; } /* 14px */
+
+p
+{
+	margin: 0 0 1.5em;
+	line-height: 1.5;
+}
+
+blockquote
+{
+	padding: 1em 2em;
+	margin: 0 0 2em;
+	border-left: 5px solid #eee;
+}
+.links{ color: white;
+position: absolute;
+top: 132px;
+left: 840px;
+font-size: 9pt;
+height: 80px;
+text-decoration: none;}
+.links a{
+	text-decoration: none;
+	color: white;
+}
+.links a:hover{
+	color: green;
+	text-decoration: underline;
+}
+hr
+{
+	height: 0;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	border: 0;
+	border-top: 1px solid #ddd;
+}
+.news{background-color: grey;
+	display: block;
+	color: #555;
+	height: 25px;
+	box-shadow: 4px 4px 4px;}
+	.news p{
+		color: black;
+		font-size: 9pt;
+	}
+	.news p a{
+		color: black;
+		text-decoration: none;
+	}
+	.news p a:hover{
+		color: red;
+	}
+#slider-container{ background: white;
+padding: 0;
+height: 290px;
+
+}
+.mySlides w3-animate-fading{
+	border: solid black 4px 4px 4px;
+}
+
+.button {
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+	border: 5px;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
+.departments{
+	border: transparent black;
+	width: 700px;
+
+	float: left;
+	clear: both;
+}
+.departments h2{
+	color: green;
+	clear: both;
+	float: left;
+}
+.departments p{
+	font-size: 8pt;
+}
+.submit{
+	background-color: green;
+	border-radius: 5px;
+	border: green;
+	box-shadow: #000;
+	size: 50px;
+}
+.events{
+	float: left;
+	text-align: center;
+	background: rgba(0,0,0,0.2);
+	box-shadow: 4px 4px 4px;
+}
+.events h2{
+	color: green;
+	text-align: center;
+}
+.exams{
+	clear: both;
+	float: right;
+
+	
+}
+.exams h2 a{
+	text-decoration: none;
+	color: green;
+	text-align: right;
+}
+.exams h2 a:hover{
+	color: red;
+}
+
+/* -----------------------
+Layout styles
+------------------------*/
+
+select{
+	width: 100px;
+}
+.header
+{
+	
+	background: url('../img/cap.jpg') ;
+	padding: 1em 1.25em;
+}
+
+.header-heading {
+	text-align: left; 
+	margin: 0;
+	color: red;
+	text-shadow: black 4px 4px 4px;
+	font-family: cursive; }
+	.header-heading a{
+		font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+		color: green;
+		text-decoration: none;
+		text-shadow: black 4px 4px 3px;
+	}
+	.header-heading a:hover{
+		color: red;
+	}
+	.header-heading h3{
+		color: green;
+	}
+	.search{
+		float: right;
+		position: absolute;
+		top: 80px;
+		left: 800px;
+		border: skyblue;
+		border-radius: 10px;
+	}
+.footer
+{
+	color: #fff;
+	background: #000;
+	padding: 1em 1.25em;
+}
+.footer a{
+	color: white;
+	text-decoration: none;
+}
+.footer a:hover{
+	color: green;
+}
+
+/* -----------------------
+Nav
+------------------------*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: green;
+	border-radius: 20px;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+	position: relative; z-index: 99;
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	font-size: 10pt;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	
+}
+
+.dropdown-content a:hover {background-color: green;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* -----------------------
+Wide styles
+------------------------*/
+
+@media (min-width: 300)
+{
+	.header { padding: 1.5em 3em; }
+	.content { padding: 2em 3em; }
+	.footer { padding: 2em 3em; }
+.adm{
+	background: rgba(0,0,0,0.2);
+	text-align: center;
+}
+.adm h3, h4{ color: green;
+
+}
+.container{
+	margin: auto;
+	background: rgba(0,0,0,0.2);
+}
+
+@media only screen and (max-width: 768px)
+@media only screen and (orientation: landscape)
+@media only screen and (min-width: 768px)
+@media only screen and (min-width: 600px)
